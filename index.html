@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Email Templater - Amitabh Borah</title>
+        <script src="script.js"></script>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    padding: 50px;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"], textarea {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+input{
+    width: 200px !important;
+}
+
+input,
+textarea {
+  display: block;
+  margin: 0 auto;
+}
+
+.submit-1{
+    margin-top: 20px;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+button:focus {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.output{
+    width:100px;
+}
+      input,
+      textarea {
+        display: block;
+        margin: 0 auto;
+      }
+      input[type="text"], textarea {
+  width: 300px !important;
+}
+      .container {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p style="color:red;padding:20px;">**Case Sensitive** Watch out for spaces after, before, and between image names.</p>
+      <label for="replacement1">First Image Name : For Buttons</label>
+      <input type="text" id="replacement1" name="replacement1">
+      <br>
+      <label for="replacement2">Second Image Name : For Buttons</label>
+      <input type="text" id="replacement2" name="replacement2">
+      <br>
+      <label for="replacement3">Third Image Name : For Buttons</label>
+      <input type="text" id="replacement3" name="replacement3">
+      <br>
+      <label for="demo-image1">First Image Demo Name</label>
+      <input type="text" id="demo-image1" name="demo-image1">
+      <br>
+      <label for="demo-image2">Second Image Demo Name</label>
+      <input type="text" id="demo-image2" name="demo-image2">
+      <br>
+      <label for="demo-image3">Third Image Demo Name</label>
+      <input type="text" id="demo-image3" name="demo-image3">
+      <br>
+      <button onclick="replaceKeywords()">Submit</button>
+      <br><br>
+      <label for="output">Output HTML:</label>
+      <textarea id="output" rows="10" cols="50"></textarea>
+      <br>
+      <button onclick="copyOutput()">Copy Output</button>
+      <p style="padding:50px;">© Copyright 2023 Amitabh Borah | borah.link</p>
+    </div>
+  </body>
+</html>
